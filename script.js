@@ -2,12 +2,9 @@ const myScreen = document.getElementById("screen");
 
 const timerNumbers = document.getElementById("timer");
 
-
-
+    
 const arrayNumb = createRandUniqueNumArray(5, 1, 100);
 console.log(arrayNumb);
-
-
 
 myScreen.innerHTML = arrayNumb;
 
@@ -23,17 +20,17 @@ function startTimer() {
         function () {
             timerNumbers.innerHTML = seconds;
             if (seconds === 0) {
+               
                 clearInterval(counting);
 
                 const arrayUtente = [];
 
-                // let sommaNumeriUtente = 0;
-
+            
                 while (arrayUtente.length < 5) {
 
                     let numeroUtente = parseInt(prompt("Inserisci numero"));
                     arrayUtente.push(numeroUtente);
-                    // sommaNumeriUtente += numeroUtente;
+                   
                 }
 
                 for(let i = 0; i < arrayUtente.length; i++){
